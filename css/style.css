@@ -1,0 +1,354 @@
+/* GENERAL */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-image: url("../images/wallpaper16.jpg");
+    background-size: cover;
+    position: relative;
+    text-align: center;
+}
+
+/* NAVIGACIJA */
+.navbar {
+    background-color: rgba(10,38,49,255);
+    color: rgba(229,173,148,255);
+    text-transform: uppercase;
+    width: 100%;
+    height: 60px;
+}
+
+.navbar-toggler {
+    background-color: rgba(229,173,148,255);
+}
+
+.nav-item:hover, .navbar-brand:hover {
+    color: rgb(193, 90, 42);
+}
+
+.nav-item:hover, .nav-item:active {
+    font-size: 120%;
+}
+
+.navbar-brand:hover, .navbar-brand:active {
+    font-size: 150%;
+}
+
+.navbar-brand, .text-reset, .nav-link, .nav-item {
+    color: rgba(229,173,148,255);
+}
+
+/* PRADZIA */
+.banner-area {
+    background-image: url('../images/banner2.jpg');
+    background-size: cover;
+    background-position: center center;
+    top: 100px;
+    height: 100vh;
+    width: 100%;
+    opacity: .9;
+}
+
+.banner-area h2 {
+    justify-content: center;
+    text-align: center;
+    font-size: 100px;
+    text-transform: uppercase;
+    text-shadow: -1px 0 wheat, 0 1px wheat, 1px 0 wheat, 0 -1px wheat;
+    color: rgba(10,38,49,255);
+    padding-top: 25%;
+}
+
+.content-area {
+    width: 100%;
+    height: 800px;
+    position: relative;
+}
+
+.content-area h2 {
+    padding: 20px;
+    font-size: 60px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: rgb(31, 88, 67);
+}
+
+.content-area p, li {
+    line-height: 30px;
+    padding: 10px 0;
+    font-size: 18px;
+    color: rgb(24, 55, 44);
+}
+
+.content-area h5 {
+    font-size: 40px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: rgb(31, 88, 67);
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+/* PASLAUGOS IR KAINOS */
+.paslaugos table, .kainos table {
+    width: 500px;
+    height: auto;
+    font-size: 20px;
+    text-align: center;
+    justify-content: center;
+    border: 5px solid rgba(229,173,148,255);
+    margin: 100px auto;
+    color: rgba(229,173,148,255);
+    background-color: rgba(10,38,49,255);
+}
+
+.paslaugos table th, .kainos table th {
+    font-size: 30px;
+    text-transform: uppercase;
+    color: rgba(229,173,148,255);
+    padding: 20px;
+}
+
+.paslaugos table td, .kainos table td {
+    padding: 5px;
+}
+
+/* GALERIJA */
+.gallery-container {
+    width: 100%;
+    /* height: 100%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.swiper {
+    width: 40%;
+    height: fit-content;
+    margin-bottom: 10px;
+}
+
+.swiper-slide img {
+    width: 100%;
+}
+
+.swiper .swiper-button-prev, .swiper .swiper-button-next {
+    color: white;
+}
+
+.swiper .swiper-pagination-bullet-active {
+    background-color: white;
+}
+
+/* SUSISIEKIME PAGE'AS */
+form {
+    color: rgba(229,173,148,255);
+    background-color: rgba(10,38,49,255);
+    opacity: 0.9;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.booking-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px 15px;
+    margin: 30px auto;
+}
+
+.booking-box {
+    padding: 10px;
+}
+
+input, select {
+    background-color: rgba(229,173,148,255);
+    opacity: 0.8;
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.booking-header {
+    background-color: rgba(229,173,148,255);
+    opacity: 0.8;
+    padding: 10px 15px;
+    text-align: center;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.booking-header h1, .booking-header p {
+    color: rgba(10,38,49,255);
+    margin: 5px;
+}
+
+.booking-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 15px;
+    margin: 5px;
+}
+
+.booking-row #button {
+    margin-top: 10px;
+}
+
+#button:hover {
+    background-color: rgb(193, 90, 42);
+}
+
+.booking-col-6 {
+    width: 50%;
+    margin: 5px;
+    margin-bottom: 5px;
+}
+
+.booking-col-6 p {
+    margin: 5px;
+}
+
+.time-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.available-times {
+    column-count: 7;
+    column-width: 14%;
+}
+
+::placeholder {
+    color: rgba(10,38,49,255);
+}
+
+.confirm-message {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* KONTAKTAI */
+.contacts-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 50px auto;
+}
+
+.rekvizitai {
+    max-width: 500px;
+    height: auto;
+    font-size: 16px;
+    text-align: center;
+    border: 5px solid rgba(229,173,148,255);
+    background-color: rgba(10,38,49,255);
+    padding: 15px;
+}
+
+address {
+    font-style: italic;
+    padding: 5px;
+    color: rgba(229,173,148,255);
+}
+
+address p {
+    padding: 10px;
+}
+
+.rekvizitai h2 {
+    font-size: 30px;
+    color: rgba(229,173,148,255);
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.rekvizitai h5 {
+    margin-bottom: 20px;
+    color: rgba(229,173,148,255);
+}
+
+.socialiniai-tinklai {
+    margin-bottom: 15px;
+}
+
+.socialiniai-tinklai a {
+    padding: 10px;
+}
+
+iframe {
+    width: 80%;
+    /* height: 300px; */
+    margin: 50px auto;
+}
+
+footer {
+    /* position: fixed; */
+    /* right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    margin: 0; */
+    background-color: rgba(245, 245, 245, 0.271);
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    align-content: center;
+}
+
+.right-footer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding-top: 10px;
+}
+
+.left-footer {
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 10px;
+    align-items: flex-start;
+}
+
+/* =====MEDIA QUERIES===== */
+
+@media screen and (max-width: 576px){
+
+    .banner-area {
+        width: 100%;
+    }
+    .booking-container {
+        width: 100%;
+    }
+
+    .paslaugos table, .kainos table {
+        margin: 20px;
+    }
+
+    .booking-row {
+        display: block;
+    }
+
+    .booking-col-6 {
+        width: 100%;
+    }
+
+    .available-times {
+        display: grid;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+    }
+}
